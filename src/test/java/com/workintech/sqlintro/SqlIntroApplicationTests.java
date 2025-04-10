@@ -88,7 +88,7 @@ class SqlIntroApplicationTests {
 
 	@DisplayName("İkinci harfi E olan kitapları listeleyiniz..")
 	@Test
-	void findBooksSecondLetterOfNTest(){
+	void findStudentsSecondLetterOfN(){
 		assertEquals(ogrenciRepository.findStudentsSecondLetterOfN().size(), 5);
 	}
 }
