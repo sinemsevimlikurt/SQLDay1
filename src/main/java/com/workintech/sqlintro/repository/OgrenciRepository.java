@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface OgrenciRepository extends JpaRepository<Ogrenci, Long> {
 
-    //Öğrenci tablosundaki tüm kayıtları listeleyin.
+    //ogrenci tablosundaki tüm kayıtları listeleyin.
     String QUESTION_1 = "SELECT * FROM ogrenci";
     @Query(value = QUESTION_1, nativeQuery = true)
     List<Ogrenci> findAll();
